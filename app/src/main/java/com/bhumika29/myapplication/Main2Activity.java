@@ -18,8 +18,8 @@ public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 
-    NavigationView navigationView= null;
-    Toolbar toolbar=null;
+    NavigationView navigationView = null;
+    Toolbar toolbar = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,8 @@ public class Main2Activity extends AppCompatActivity
         setContentView(R.layout.activity_main2);
 
 
-        MainFragment fragment= new MainFragment();
-        android.support.v4.app.FragmentTransaction fragmentTransaction=
+        MainFragment fragment = new MainFragment();
+        android.support.v4.app.FragmentTransaction fragmentTransaction =
                 getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, fragment);
         fragmentTransaction.commit();
@@ -39,7 +39,7 @@ public class Main2Activity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "You have no messages!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -94,29 +94,29 @@ public class Main2Activity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-            MainFragment fragment= new MainFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction=
+            MainFragment fragment = new MainFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_gallery) {
-            SecondFragment fragment= new SecondFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction=
+            SecondFragment fragment = new SecondFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_slideshow) {
-            ThirdFragment fragment= new ThirdFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction=
+            ThirdFragment fragment = new ThirdFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_manage) {
 
-            BlankFragment fragment= new BlankFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction=
+            BlankFragment fragment = new BlankFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
@@ -132,14 +132,83 @@ public class Main2Activity extends AppCompatActivity
         return true;
     }
 
-    public void onButtonClick (View v){
-        if(v.getId()== R.id.imageButton){
-            DressFragment fragment= new DressFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction=
+    public void onButtonClick(View v) {
+        if (v.getId() == R.id.button5) {
+            DressFragment fragment = new DressFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
 
+        } else if (v.getId() == R.id.button) {
+            AditiFragment fragment = new AditiFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
         }
+        else if(v.getId() == R.id.button6) {
+            bhumikaFragment fragment = new bhumikaFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
+        }
+        else if(v.getId() == R.id.button7) {
+            roshiniFragment fragment = new roshiniFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
+        }
+        else if(v.getId() == R.id.button8) {
+            NatashaFragment fragment = new NatashaFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
+        }
+        else if(v.getId() == R.id.button9) {
+            natashaneck fragment = new natashaneck();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
+        }
+        else if(v.getId() == R.id.button10) {
+            bhumikashoes fragment = new bhumikashoes();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
+        }
+        else if(v.getId() == R.id.button11) {
+            roshiniblazer fragment = new roshiniblazer();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
+        }
+        else if(v.getId() == R.id.button12) {
+            TiesFragment fragment = new TiesFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
+        }
+        else if(v.getId() == R.id.button13) {
+            yourpicFragment fragment = new yourpicFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
+        }
+
+
+
+
+
+
+
     }
 }
