@@ -9,43 +9,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bhumika29.myapplication.MainActivity"
     android:clickable="true"
-    android:background="@drawable/loginback2">
+    android:background="@drawable/login">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up"
         android:id="@+id/button2"
         android:onClick="onButtonClick"
-        android:layout_centerVertical="true"
         android:icon="@drawable/ic_add_circle_outline_24dp"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginBottom="87dp"
         android:layout_alignRight="@+id/editText7"
         android:layout_alignEnd="@+id/editText7"
-        android:textColor="#000000" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome to FBLADress, please sign in or create a new account."
-        android:id="@+id/textView4"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText6"
-        android:hint="Username"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="44dp"
-        android:background="#f4e9e9"
-        android:autoText="false" />
+        android:background="@android:color/transparent"/>
 
     <EditText
         android:layout_width="fill_parent"
@@ -55,20 +34,33 @@
         android:id="@+id/editText7"
         android:hint="Password"
         android:background="#f4e9e9"
-        android:layout_below="@+id/editText6"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="9dp" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log in"
         android:id="@+id/button3"
+        android:onClick="onButtonClick"
         android:layout_above="@+id/button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/button2"
         android:layout_alignEnd="@+id/button2"
-        android:onClick="onButtonClick" />
+        android:background="@android:color/transparent"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_above="@+id/editText7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:layout_alignRight="@+id/editText7"
+        android:layout_alignEnd="@+id/editText7"
+        android:background="#f4e9e9"
+        android:hint="Username" />
+
 </RelativeLayout>

@@ -45,7 +45,6 @@
     <Button
         android:layout_width="180dp"
         android:layout_height="150dp"
-        android:text=" "
         android:id="@+id/button12"
         android:layout_gravity="left|center_vertical"
         android:background="@android:color/transparent"
@@ -54,7 +53,6 @@
     <Button
         android:layout_width="170dp"
         android:layout_height="166dp"
-        android:text=" "
         android:id="@+id/button13"
         android:layout_gravity="left|top"
         android:background="@android:color/transparent"
